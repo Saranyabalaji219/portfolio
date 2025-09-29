@@ -73,7 +73,7 @@
 }
 
 .contact-right input{
-    background-color: rgb(124, 237, 245);
+    background-color: rgb(246, 254, 254);
     height: 28px;
     width: 200px;
     border-radius: 5px;
@@ -81,7 +81,7 @@
     padding: 9px;
 }
 .contact-right textarea{
-    background-color: rgb(124, 237, 245);
+    background-color: rgb(246, 254, 254);
     height: 90px;
     width: 300px;
     border-radius: 5px;
