@@ -73,7 +73,7 @@
 
 @media (max-width: 768px) {
   .About {
-    height: 550px;
+    min-height: 550px;
     padding: 2px;
     text-align: center;
   }
