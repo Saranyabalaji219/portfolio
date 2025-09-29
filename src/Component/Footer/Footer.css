@@ -65,3 +65,22 @@
   font-size: 14px;
   color: #777;
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
