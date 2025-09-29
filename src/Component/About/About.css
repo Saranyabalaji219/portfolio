@@ -58,7 +58,7 @@
 .profile2 {
   width: 300px;
   height: 300px;
-  border: 3px solid #1b1c1d;
+  border: 2px solid #1b1c1d;
   object-fit: cover;
    cursor: pointer;
   animation: moveProfile2 4s infinite ease-in-out; /* apply animation */
@@ -73,7 +73,8 @@
 
 @media (max-width: 768px) {
   .About {
-    padding: 20px;
+    height: 500px;
+    padding: 2px;
     text-align: center;
   }
 
@@ -90,6 +91,6 @@
 
   .abt-para p {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 28px;
   }
 }

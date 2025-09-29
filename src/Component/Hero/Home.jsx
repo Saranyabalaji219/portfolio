@@ -1,11 +1,11 @@
 import React from 'react'
 import './Home.css'
-import profile1 from '../../assets/profile1.jpg'
+import profile2 from '../../assets/profile2.jpeg'
 
 const Home = () => {
   return (
     <div id='home' className='Home'>
-        <img src={profile1} alt="" className='profile1'/>
+        <img src={profile2} alt="" className='profile1'/>
         <h1><span>Hi! I'm Saranya,</span> </h1>
         <p className='p1'>Java Fullstack Developer</p>
         <p>Welcome to my Portfolio 😊</p>

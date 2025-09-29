@@ -28,7 +28,11 @@
 }
 
 .contact-title{
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px;
+  position: relative;
 }
 
 .contact-title h1{
@@ -123,11 +127,24 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding: 20px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
   }
+  .contact-title h1{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
 
+  }
   .contact-section {
     flex-direction: column;
+    gap: 25px;
+  }
+  .contact-left h1{
+    font-size: 20px;
   }
 
   .contact-left, .contact-right {
@@ -140,9 +157,13 @@
   }
 
   .contact-detail {
-    margin-bottom: 10px;
+    gap: 15px;
+    margin-bottom: 2px;
   }
-
+  .contact-details{
+   margin-bottom: 25px;
+    gap: 22px;
+  }
   form input, form textarea {
     width: 100%;
   }
