@@ -156,3 +156,25 @@
   }
 }
 
+/* Style nav links (both <a> and <button>) */
+.nav-menu a,
+.nav-menu button {
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: black;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+/* Hover effect */
+.nav-menu a:hover,
+.nav-menu button:hover {
+  color: rgb(238, 64, 64);
+  transform: scale(1.05);
+}
