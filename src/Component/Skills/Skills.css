@@ -13,7 +13,8 @@
     gap: 90px;
     margin-top: 40px;
     padding: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; 
+    
 }
 .skills-section {
     flex: 1;
@@ -79,7 +80,6 @@
 
   .frontend, .backend, .Database {
     width: 100%;
-    
   }
 
   .about-skill p {
