@@ -14,7 +14,7 @@ const App = () => {
     <div className="app-container">
       <Navbar setPage={setPage} />
 
-      {page === "home" && <div className="page"><Home /></div>}
+      {page === "home" && <div className="page"><Home setPage={setPage} /></div>}
       {page === "about" && <div className="page"><About /></div>}
       {page === "skills" && <div className="page"><Skills /></div>}
       {page === "projects" && <div className="page"><Projects /></div>}

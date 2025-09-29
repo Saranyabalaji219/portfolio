@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 import profile2 from '../../assets/profile2.jpeg'
 
-const Home = () => {
+const Home = ({ setPage }) => {
   return (
     <div id='home' className='Home'>
         <img src={profile2} alt="" className='profile1'/>
@@ -10,8 +10,8 @@ const Home = () => {
         <p className='p1'>Java Fullstack Developer</p>
         <p>Welcome to my Portfolio 😊</p>
         <div className="hero-action">
-           <a href="#contact" className="hero-connect">Connect with me</a>
-            <a href="/resume.pdf"  className="hero-resume"  target="_blank"   rel="noopener noreferrer"  download > My resume </a>        
+        <button className="hero-connect" onClick={() => setPage("contact")}>Connect with me </button>          
+        <a href="/resume.pdf"  className="hero-resume"  target="_blank"   rel="noopener noreferrer"  download > My resume </a>        
           </div>
     </div>
   )
