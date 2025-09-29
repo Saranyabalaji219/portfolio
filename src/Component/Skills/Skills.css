@@ -27,8 +27,11 @@
     justify-content: center;
     gap: 20px;
     flex-direction: column;
-    min-width: 400px;
+    min-width: 250px;
+    max-width: 300px; 
     text-align: left;
+    flex: 1;
+
 }
 
 
@@ -80,6 +83,8 @@
 
   .frontend, .backend, .Database {
     width: 100%;
+     min-width: unset; 
+    max-width: unset;
   }
 
   .about-skill p {
