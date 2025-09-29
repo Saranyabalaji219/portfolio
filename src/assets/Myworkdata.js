@@ -8,7 +8,7 @@ const Myworkdata = [
         Proj_image : Projimg1,
         proj_description: "A personal portfolio done by using react js",
         github: "https://github.com/Saranyabalaji219/portfolio",
-        demo:"https://celadon-entremet-d5a5c1.netlify.app/"
+        demo:"https://saranyapersonalportfolio.netlify.app/"
     }
 ]
 
