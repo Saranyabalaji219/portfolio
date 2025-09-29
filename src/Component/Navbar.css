@@ -1,0 +1,158 @@
+/* Navbar.css */
+
+
+.profile1 {
+  width: 250px;
+  height: 250px;
+  /* border-radius: 50%;   */
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+/* Add this to Navbar.css */
+@keyframes moveProfile {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(10px); } /* move 100px right */
+  100% { transform: translateX(0); }     /* back to start */
+}
+
+.profile1 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #2a88a1;
+  object-fit: cover;
+  animation: moveProfile 4s infinite ease-in-out; /* apply animation */
+}
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 160px;
+}
+
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    gap: 50px;
+}
+.Connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    border-color: none;
+    background: linear-gradient(267deg, rgb(68, 136, 182), rgb(216, 103, 122)) ;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.Connect:hover{
+    transform: scale(1.05);
+    color: azure;
+}
+.Logo {
+  height: 80px;        /* better size for navbar */
+  width: auto;         /* keep aspect ratio */
+  object-fit: contain; /* makes sure it fits */
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Global link reset for nav */
+.nav-menu a {
+  text-decoration: none;
+  color: black; 
+  font-size: inherit;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.nav-menu a:hover {
+  text-decoration: none;
+  color: rgb(238, 64, 64);
+  transform: scale(1.05);
+}
+
+
+/* Optional: small bounce animation */
+@keyframes bounceLogo {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.Logo {
+  animation: bounceLogo 3s infinite ease-in-out;
+}
+.Menu-open{
+  display: none;
+}
+.Menu-close{
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px 30px;
+  }
+
+  /* Hide connect button on mobile */
+  .nav-connect {
+    display: none;
+  }
+
+  /* Hamburger (only visible when menu is closed) */
+  .Menu-open {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  /* Nav menu hidden by default */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -260px;   /* fully hidden */
+    width: 250px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    align-items: start;
+    padding: 80px 20px;
+    gap: 30px;
+    transition: right 0.4s ease-in-out;
+    z-index: 2;
+  }
+
+  /* When menuOpen = true */
+  .nav-menu.active {
+    right: 0;        /* slide in */
+  }
+
+  /* Close button inside menu */
+  .Menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .nav-menu li {
+    font-size: 22px;
+  }
+}
+

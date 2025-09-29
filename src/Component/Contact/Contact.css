@@ -1,0 +1,155 @@
+.contact-detail .img1{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.contact-detail .img2{
+     height: 30px;
+    width: 30px;
+    margin-left: 11px;
+}
+.contact-detail .img3{
+    height: 45px;
+    width: 50px;
+}
+.contact-detail .img{
+    object-fit: contain;
+   
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+.contact-title{
+    position: relative;
+}
+
+.contact-title h1{
+    padding: 0px 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.contact-section{
+    display: flex;
+    gap: 150px;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-right label{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contact-right input{
+    background-color: rgb(124, 237, 245);
+    height: 28px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 9px;
+}
+.contact-right textarea{
+    background-color: rgb(124, 237, 245);
+    height: 90px;
+    width: 300px;
+    border-radius: 5px;
+     border: 2px solid black;
+     padding: 9px;
+}
+.contact-detail a, 
+.contact-detail p {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.contact-detail a {
+    margin: 6px;
+}
+
+.contact-detail p:hover,a:hover {
+  color: #0073b1; 
+  text-decoration: underline;
+}
+
+.submit{
+    background-color: #171616;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid rgb(48, 52, 51);
+    height: 30px;
+    width: 150px;
+    transition: 0.5s;
+}
+
+.submit:hover{
+
+   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+  }
+
+  .contact-details img{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-detail {
+    margin-bottom: 10px;
+  }
+
+  form input, form textarea {
+    width: 100%;
+  }
+
+ .submit {
+    line-height: 30px; /* match button height */
+    text-align: center;
+}
+
+}

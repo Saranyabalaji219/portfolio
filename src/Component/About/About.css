@@ -1,0 +1,95 @@
+/* .About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.About .about-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* flex-direction: column; */
+
+
+.About {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.About .about-title{
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.About h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.About strong{
+   background: linear-gradient(270deg, rgb(81, 12, 200),rgb(240, 26, 26));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+
+.About p {
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #0b0b0b;
+  margin-bottom: 15px;
+}
+
+.profile2 {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #1b1c1d;
+  object-fit: cover;
+   cursor: pointer;
+  animation: moveProfile2 4s infinite ease-in-out; /* apply animation */
+}
+/* Add this to Navbar.css */
+@keyframes moveProfile2 {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(15px); } /* move 100px right */
+  100% { transform: translateX(0); }     /* back to start */
+}
+
+
+@media (max-width: 768px) {
+  .About {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile2 {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .abt-para p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
