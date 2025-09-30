@@ -53,13 +53,11 @@ p{ color: var(--color-text-muted); }
 }
 .btn:hover{ transform: translateY(-1px); box-shadow: var(--shadow-md); }
 .btn-primary{
-  background: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   color: var(--color-primary-contrast);
   border-color: transparent;
 }
-.btn-primary:hover{ box-shadow: var(--shadow-lg);
-  background: #1d4ed8;
-}
+.btn-primary:hover{ box-shadow: var(--shadow-lg); filter: brightness(1.05); }
 
 /* Cards */
 .card{

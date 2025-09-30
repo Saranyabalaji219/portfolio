@@ -1,14 +1,15 @@
 :root {
-  /* Colors */
+  /* Colors - Light defaults (as before) */
   --color-bg: #ffffff;
   --color-surface: #f7f8fa;
   --color-elevated: #ffffff;
-  --color-text: #0f172a; /* slate-900 */
-  --color-text-muted: #475569; /* slate-600 */
-  --color-primary: #2563eb; /* blue-600 */
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-primary: #2563eb;
   --color-primary-contrast: #ffffff;
-  --color-accent: #8b5cf6; /* violet-500 */
-  --color-border: #e5e7eb; /* gray-200 */
+  --color-accent: #8b5cf6;
+  --color-secondary: #10b981;
+  --color-border: #e5e7eb;
 
   /* Spacing (4px scale) */
   --space-1: 4px;
@@ -47,3 +48,4 @@
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.7;
 }
+

@@ -40,7 +40,7 @@
     font-family: 500;
     margin-bottom: var(--space-12);
 }
-.hero-action .btn{ width: 220px; height: 48px; font-size: var(--font-size-lg); font-weight: 600; }
+.hero-action .btn{ width: 180px; height: 48px; font-size: var(--font-size-lg); font-weight: 600; }
 
 .hero-connect{
     border: none;
@@ -70,5 +70,5 @@
       .Home h1{ width: 100%; }
       .Home .p1{ width: 100%; font-size: var(--font-size-xl); line-height: var(--line-height-normal); margin: var(--space-2) 0; }
       .Home p{ width: 100%; font-size: var(--font-size-base); line-height: var(--line-height-relaxed); margin: var(--space-2) 0; }
-      .hero-action{ gap: var(--space-4); font-size: var(--font-size-base); font-weight:500; margin-bottom: var(--space-10); }
+      .hero-action{ gap: var(--space-3); font-size: var(--font-size-base); font-weight:500; margin-bottom: var(--space-10); }
 }
