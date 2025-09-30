@@ -18,7 +18,7 @@
 .footer-left h2 {
   font-size: var(--font-size-xl);
   margin-bottom: var(--space-2);
-  color: var(--color-primary);
+  color: #ff6a00;
 }
 
 .footer-left p {
@@ -42,6 +42,7 @@
   width: 28px;
   height: 28px;
   transition: transform 0.2s ease;
+  border-radius: 20%;
 }
 
 .footer-socials img:hover {
