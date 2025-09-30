@@ -108,14 +108,9 @@
 }
 
 
-.contact-detail a {
-    margin: 6px;
-}
+.contact-detail a { margin: 6px; text-decoration: none; color: #333; }
 
-.contact-detail p:hover,a:hover {
-  color: #0073b1; 
-  text-decoration: underline;
-}
+.contact-detail a:hover, .contact-detail p:hover { color: var(--color-primary); text-decoration: none; }
 
 .submit{
     height: 44px;
