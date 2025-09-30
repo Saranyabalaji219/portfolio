@@ -32,8 +32,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 160px;
-    height: 80px;
+    margin: var(--space-6) auto;
+    padding: 0 var(--space-6);
+    height: 72px;
+    max-width: 1100px;
 }
 
 
@@ -41,8 +43,8 @@
     display: flex;
     align-items: center;
     list-style: none;
-    font-size: 20px;
-    gap: 50px;
+    font-size: var(--font-size-lg);
+    gap: var(--space-6);
 }
 .Connect{
     padding: 20px 40px;
@@ -58,9 +60,9 @@
     color: azure;
 }
 .Logo {
-  height: 80px;        /* better size for navbar */
-  width: auto;         /* keep aspect ratio */
-  object-fit: contain; /* makes sure it fits */
+  height: 56px;
+  width: auto;
+  object-fit: contain;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -76,8 +78,8 @@
 
 .nav-menu a:hover {
   text-decoration: none;
-  color: rgb(238, 64, 64);
-  transform: scale(1.05);
+  color: var(--color-primary);
+  transform: translateY(-1px);
 }
 
 
@@ -100,7 +102,7 @@
 
 @media (max-width: 768px) {
   .navbar {
-    margin: 20px 30px;
+    margin: var(--space-4);
   }
 
   /* Hide connect button on mobile */
@@ -127,13 +129,14 @@
     right: -260px;   /* fully hidden */
     width: 250px;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-elevated);
     flex-direction: column;
     align-items: start;
     padding: 80px 20px;
-    gap: 30px;
+    gap: var(--space-5);
     transition: right 0.4s ease-in-out;
     z-index: 2;
+    box-shadow: var(--shadow-lg);
   }
 
   /* When menuOpen = true */

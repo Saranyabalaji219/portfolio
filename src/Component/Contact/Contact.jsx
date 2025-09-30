@@ -30,7 +30,7 @@ const Contact = () => {
     }
   };
   return (
-    <div id='contact' className='contact'>
+    <div id='contact' className='contact' role="region" aria-label="Contact">
       <div className="contact-title">
        <h1>Get in touch</h1>
        {/* <img src="" alt="" /> */}
@@ -52,15 +52,15 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        <form onSubmit={onSubmit} className="contact-right">
-          <label htmlFor="">Name:</label>
-          <input type="text" placeholder='Enter your name' name='name'/>
-          <label htmlFor="">Email:</label>
-          <input type="text" placeholder='Enter your Email' name='email'/>
-          <label htmlFor="">Message:</label>
-          <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
-          <button type='submit' className='submit'>Submit</button>
-          </form>
+        <form onSubmit={onSubmit} className="contact-right" aria-label="Contact form">
+          <label htmlFor="name">Name</label>
+          <input id="name" type="text" placeholder='Enter your name' name='name' required aria-required="true"/>
+          <label htmlFor="email">Email</label>
+          <input id="email" type="email" placeholder='Enter your Email' name='email' required aria-required="true"/>
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" rows="8" placeholder='Enter your message' required aria-required="true"></textarea>
+          <button type='submit' className='btn btn-primary submit'>Submit</button>
+        </form>
       </div>
     </div>
   )

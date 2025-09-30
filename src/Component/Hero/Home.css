@@ -2,29 +2,31 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 26px;
+    gap: var(--space-6);
+    padding: var(--space-16) var(--space-6);
 }
 
 .Home h1{
     text-align: center;
-    width: 60%;
-    font-size: 50px;
-    font-weight: 600;
+    width: min(900px, 100%);
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
 }
 .Home .p1{
-    font-size: 40px;
+    font-size: var(--font-size-2xl);
     font-weight: 600;
+    color: var(--color-text-muted);
 }
 .Home p{
-    font-weight: 550;
-    width: 50%;
+    font-weight: 500;
+    width: min(720px, 100%);
     text-align: center;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
 }
 
 .Home h1 span{
-    background: linear-gradient(270deg, rgb(221, 61, 25),rgb(146, 8, 146));
+    background: linear-gradient(270deg, var(--color-primary), var(--color-accent));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -33,46 +35,23 @@
 .hero-action{
     display: flex;
     align-items: center;
-    gap: 25px;
-    font-size: 24px;
+    gap: var(--space-6);
+    font-size: var(--font-size-lg);
     font-family: 500;
-    margin-bottom: 50px;
+    margin-bottom: var(--space-12);
 }
 
 .hero-connect{
-    padding: 20px 40px;
-    border-radius: 50px;
-    border-color: none;
-    background: linear-gradient(267deg, rgb(68, 136, 182), rgb(216, 103, 122)) ;
-    cursor: pointer;
-    font-size: 22px;
-     border: 2px solid black;
-    transition: 0.5s;
-    text-decoration: none;
-    color: black;
+    border: none;
 }
 
 .hero-connect:hover{
-    transform: scale(1.05);
-        border: 2px solid rgb(250, 17, 17);
-    text-decoration: none;
-    color: azure;
 }
 
 .hero-resume{
-    padding: 20px 75px;
-    border-radius: 50px;
-    border: 2px solid black;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
 }
 
 .hero-resume:hover{
-    transform: scale(1.05);
-    text-decoration: none;
-    color: blue;
-    border-color: purple;
 }
 
 .hero-connect{
@@ -81,37 +60,9 @@
 
 
 @media (max-width:768px){
-     .Home img{
-        width: 260px;
-      }
-      .Home h1{
-        width: 90%;
-        font-size: 38px;
-      }
-      .Home .p1{
-        width: 60%;
-        font-size: 23px;
-        line-height: 32px;
-        margin: 10px 0px;
-      }
-      .Home p{
-        width: 60%;
-        font-size: 18px;
-        line-height: 28px;
-        margin: 10px 0px;
-      }
-      .hero-action{
-        gap: 16px;
-        font-size: 18px;
-        font-weight:500;
-        margin-bottom: 50px;
-      }
-      .hero-connect{
-        padding: 20px 30px;
-        border-radius: 40px;
-      }
-      .hero-resume{
-        padding: 20px 50px;
-        border-radius: 40px;
-      }
+      .Home img{ width: 220px; }
+      .Home h1{ width: 100%; }
+      .Home .p1{ width: 100%; font-size: var(--font-size-base); line-height: var(--line-height-normal); margin: var(--space-2) 0; }
+      .Home p{ width: 100%; font-size: var(--font-size-base); line-height: var(--line-height-relaxed); margin: var(--space-2) 0; }
+      .hero-action{ gap: var(--space-4); font-size: var(--font-size-base); font-weight:500; margin-bottom: var(--space-10); }
 }

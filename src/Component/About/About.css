@@ -14,9 +14,9 @@
 
 
 .About {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 20px;
+  max-width: 1100px;
+  margin: var(--space-16) auto;
+  padding: 0 var(--space-6);
   text-align: center;
   display: flex;
   align-items: center;
@@ -25,20 +25,29 @@
 }
 
 .About .about-title{
-  display: flex;
-  gap: 35px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-8);
   align-items: center;
   justify-content: center;
-  
+}
+
+/* Text container styling for balance */
+.abt-para{
+  background: var(--color-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
 }
 .About h1 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-6);
 }
 
 .About strong{
-   background: linear-gradient(270deg, rgb(81, 12, 200),rgb(240, 26, 26));
+   background: linear-gradient(270deg, var(--color-primary), var(--color-accent));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -46,22 +55,21 @@
 
 
 .About p {
-  margin: 5px;
-  padding: 5px;
+  margin: 0 0 var(--space-3);
+  padding: 0;
   text-align: left;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #0b0b0b;
-  margin-bottom: 15px;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-muted);
 }
 
 .profile2 {
-  width: 300px;
-  height: 300px;
-  border: 2px solid #1b1c1d;
+  width: 280px;
+  height: 280px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
   object-fit: cover;
-   cursor: pointer;
-  animation: moveProfile2 4s infinite ease-in-out; /* apply animation */
+  box-shadow: var(--shadow-md);
 }
 /* Add this to Navbar.css */
 @keyframes moveProfile2 {
@@ -72,25 +80,16 @@
 
 
 @media (max-width: 768px) {
-  .About {
-   
-    padding: 2px;
-    text-align: center;
+  .About { padding: 0 var(--space-2); }
+  .About .about-title { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); grid-template-columns: none; }
+  .profile2 { width: 240px; height: 240px; }
+  .abt-para {
+    width: 100%;
+    text-align: left;
+    padding: var(--space-4);
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
-
-  .about-title {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile2 {
-    width: 180px;
-    height: 180px;
-    margin-bottom: 20px;
-  }
-
-  .abt-para p {
-    font-size: 16px;
-    line-height: 28px;
-  }
+  .abt-para p { font-size: var(--font-size-base); line-height: var(--line-height-relaxed); }
 }
