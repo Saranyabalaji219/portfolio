@@ -37,7 +37,6 @@ const Contact = () => {
       </div>
       <div className="contact-section">
         <div className="contact-left">
-            <h1>Let's talk</h1>
             <div className="contact-details">
                 <div className="contact-detail">
                   <img src={gmail} className='img1' alt="Gmail" /> <p>saranyabalaji219@gmail.com</p>
