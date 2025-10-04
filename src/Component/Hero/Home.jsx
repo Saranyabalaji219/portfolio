@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import profile2 from '../../assets/profile2.jpeg'
+import profile2 from '../../assets/profile2.png'
 
 const Home = ({ setPage }) => {
   return (

@@ -42,26 +42,43 @@
 }
 .hero-action .btn{ width: 200px; height: 44px; font-size: var(--font-size-base); font-weight: 600; }
 
-.hero-connect{
-    border: none;
+.btn-primary.hero-connect {
+  background: linear-gradient(135deg, #44409b, #3335b9);
+    /* border: 2px solid rgb(28, 24, 153); */
+    color: #fff;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+    cursor: pointer;
+     text-decoration: none;
 }
 
-.hero-connect:hover{
+.btn-primary.hero-connect:hover {
+  background: linear-gradient(135deg, #5c55a2, #4f46e5);
+   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.45);
 }
 
 .hero-resume{
-    background: var(--color-accent);
+    background-color: rgb(139, 21, 154);
     color: var(--color-primary-contrast);
-    border-color: transparent;
+    /* border-color: transparent; */
+     border: 2px solid #e5e7eb;
     text-decoration: none;
 }
-.hero-resume:hover{ background: #9333ea; text-decoration: none; color: var(--color-primary-contrast); box-shadow: var(--shadow-md); }
-
-.hero-resume:hover{
+/* .hero-resume:hover{ 
+    background: #c34db1; text-decoration: none; color: var(--color-primary-contrast); box-shadow: var(--shadow-md);
+     transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ } */
+   .btn.hero-resume:hover {
+  background: #de4cdc;
+  color: #ecedf1;
+  border-color: #d1d5db;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .hero-connect{
-    text-decoration: none;
+   
 }
 
 
