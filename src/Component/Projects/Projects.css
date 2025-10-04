@@ -61,6 +61,7 @@
 .project-links a:hover {
     text-decoration: none;
     color: var(--color-primary);
+    background-color: var(--color-hover, rgba(221, 10, 10, 0.05)); 
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
 }
